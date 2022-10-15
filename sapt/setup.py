@@ -10,6 +10,6 @@ setup(
     install_requires=install_requirements,
     entry_points={
         "console_scripts": [
-            "sapt insrm=aptUtil:insrm",
+            "sapt purge=aptUtil:purge",
         ]
 )
