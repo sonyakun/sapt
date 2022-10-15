@@ -3,6 +3,7 @@ import sys
 import subprocess
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-def main():
+def prm():
     install = sys.argv
-    logger.info('Hello World!')
+    subprocess.run(f"sudo apt-get purge {install}", shell=True)
+    subprocess.run(f"sudo apt-get autoremove")
